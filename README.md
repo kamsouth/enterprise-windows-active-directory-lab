@@ -55,10 +55,18 @@ Configured the Windows Server host as DC01 and verified its domain membership, n
 
 
 
+
+
+
+
 Step 2 - Configured Active Directory Domain Services 
 
 Installed Active Directory Domain Services and configured DC01 as the domain controller, providing centralized authentication and management for users, groups, and computers.
 <img width="1918" height="957" alt="image" src="https://github.com/user-attachments/assets/c271e3cf-fceb-4acc-b518-60750fcc8011" />
+
+
+
+
 
 
 
@@ -70,6 +78,12 @@ Configured and reviewed DNS on DC01 to provide internal name resolution and supp
 
 
 
+
+
+
+
+
+
 Step 4 - Created a Workstation Security GPO
 
 Created a custom Workstation Security Policy Group Policy Object and configured password-related security settings to demonstrate centralized policy management within the Windows domain.
@@ -78,10 +92,20 @@ Created a custom Workstation Security Policy Group Policy Object and configured 
 
 
 
+
+
+
+
+
 Step 5 - Linked the GPO to the Workstations OU
 
 Linked the Workstation Security Policy to the Workstations Organizational Unit so the configured security settings can be centrally applied to domain-joined workstation systems.
 <img width="1912" height="943" alt="image" src="https://github.com/user-attachments/assets/fc0bb563-0671-43e8-ac2d-0a9987c71e82" />
+
+
+
+
+
 
 
 
