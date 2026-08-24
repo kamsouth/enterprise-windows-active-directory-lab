@@ -86,9 +86,14 @@ Linked the Workstation Security Policy to the Workstations Organizational Unit s
 
 
 Step 6 - Used PowerShell for Active Directory Administration
+
 Used PowerShell to query and validate Active Directory domain information, review user accounts, and inspect security groups within the lab environment.
 <img width="1916" height="968" alt="image" src="https://github.com/user-attachments/assets/a5c3f2db-ce60-4a67-aec5-9f8ac99a0406" />
+
+
 <img width="1918" height="379" alt="image" src="https://github.com/user-attachments/assets/1f3ec777-26ef-4585-95c3-741c8935a0c8" />
+
+
 <img width="1916" height="1005" alt="image" src="https://github.com/user-attachments/assets/7323f77e-7cfc-463e-ab52-eaf5870e1273" />
 
 
