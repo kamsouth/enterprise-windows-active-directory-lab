@@ -88,22 +88,22 @@ I also reviewed the forward lookup zone and DNS host records to verify that syst
 
 
 
-
-
-## Step 6 - Created a Workstation Security GPO
-
-Created a custom Workstation Security Policy Group Policy Object and configured password-related security settings to demonstrate centralized policy management within the Windows domain.
-
-<img width="1915" height="948" alt="image" src="https://github.com/user-attachments/assets/5060a47c-a30a-4ace-87ec-dbdaab751ad4" />
-
-
-## Step 7 - Create Active Directory Organizational Units
+## Step 6 - Create Active Directory Organizational Units
 
 Created Organizational Units in Active Directory to logically separate and manage users, computers, and other domain resources.
 
 Using OUs also allowed Group Policy settings to be applied to specific groups of systems instead of applying every policy across the entire domain.
 
 <img width="1301" height="999" alt="04_Active_Directory_Organizational_Unit_Creation" src="https://github.com/user-attachments/assets/f74a1eba-4c12-48a2-96a6-d00deb59d5b7" />
+
+
+## Step 7 - Created a Workstation Security GPO
+
+Created a custom Workstation Security Policy Group Policy Object and configured password-related security settings to demonstrate centralized policy management within the Windows domain.
+
+<img width="1915" height="948" alt="image" src="https://github.com/user-attachments/assets/5060a47c-a30a-4ace-87ec-dbdaab751ad4" />
+
+
 
 
 
