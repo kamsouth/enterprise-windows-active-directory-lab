@@ -47,7 +47,7 @@ This lab simulates a small enterprise Windows environment using Windows Server a
 
 ## Steps and Screenshots
 
-Step 1 - Configured the Windows Server Host
+## Step 1 - Configured the Windows Server Host
 
 Configured the Windows Server host as DC01 and verified its domain membership, network configuration, and server status before using it as the domain controller for the lab.
 <img width="1919" height="1033" alt="image" src="https://github.com/user-attachments/assets/5511c0c3-db6c-49a7-9d26-049fe048ca53" />
