@@ -47,13 +47,21 @@ This lab simulates a small enterprise Windows environment using Windows Server a
 
 ## Steps and Screenshots
 
-## Step 1 - Configured the Windows Server Host
+## Step 1 - Create the Windows Server Virtual Machine
+
+Created a Windows Server virtual machine in VirtualBox to serve as DC01, the domain controller for the lab environment.
+
+The VM was configured with the resources and network connectivity needed to support Active Directory, DNS, Group Policy, and domain services.
+<img width="1301" height="1024" alt="12_VirtualBox_DC01_Domain_Controller_VM" src="https://github.com/user-attachments/assets/38a587b8-9b87-4ed3-ad68-532e3fbca48c" />
+
+
+## Step 2 - Configured the Windows Server Host
 
 Configured the Windows Server host as DC01 and verified its domain membership, network configuration, and server status before using it as the domain controller for the lab.
 <img width="1919" height="1033" alt="image" src="https://github.com/user-attachments/assets/5511c0c3-db6c-49a7-9d26-049fe048ca53" />
 
 
-## Step 2 - Configure Static IP and DNS
+## Step 3 - Configure Static IP and DNS
 
 Configured a static IPv4 address and DNS settings on DC01 to provide consistent network addressing for Active Directory services.
 
@@ -63,7 +71,7 @@ The domain controller was configured to use the internal DNS environment so doma
 
 
 
-## Step 3 - Configured Active Directory Domain Services 
+## Step 4 - Configured Active Directory Domain Services 
 
 Installed Active Directory Domain Services and configured DC01 as the domain controller, providing centralized authentication and management for users, groups, and computers.
 <img width="1918" height="957" alt="image" src="https://github.com/user-attachments/assets/c271e3cf-fceb-4acc-b518-60750fcc8011" />
@@ -75,20 +83,20 @@ Installed Active Directory Domain Services and configured DC01 as the domain con
 
 
 
-## Step 4 - Configured DNS
+## Step 5 - Configured DNS
 
 Configured and reviewed DNS on DC01 to provide internal name resolution and support Active Directory domain discovery and authentication.
 <img width="1915" height="951" alt="image" src="https://github.com/user-attachments/assets/a70e9841-286f-43a7-b3c9-7d9638001b57" />
 
 
 
-## Step 5 - Reviewed DNS 
+## Step 6 - Reviewed DNS 
 I also reviewed the forward lookup zone and DNS host records to verify that systems within the domain could be resolved by hostname.
 <img width="1301" height="1001" alt="06_DNS_Manager_Forward_Lookup_Zone_and_Host_Record" src="https://github.com/user-attachments/assets/bdc19e81-0f05-4707-8e35-8b3fd24e9330" />
 
 
 
-## Step 6 - Create Active Directory Organizational Units
+## Step 7 - Create Active Directory Organizational Units
 
 Created Organizational Units in Active Directory to logically separate and manage users, computers, and other domain resources.
 
@@ -97,7 +105,7 @@ Using OUs also allowed Group Policy settings to be applied to specific groups of
 <img width="1301" height="999" alt="04_Active_Directory_Organizational_Unit_Creation" src="https://github.com/user-attachments/assets/f74a1eba-4c12-48a2-96a6-d00deb59d5b7" />
 
 
-## Step 7 - Created a Workstation Security GPO
+## Step 8 - Created a Workstation Security GPO
 
 Created a custom Workstation Security Policy Group Policy Object and configured password-related security settings to demonstrate centralized policy management within the Windows domain.
 
@@ -108,7 +116,7 @@ Created a custom Workstation Security Policy Group Policy Object and configured 
 
 
 
-## Step 8 - Linked the GPO to the Workstations OU
+## Step 9 - Linked the GPO to the Workstations OU
 
 Linked the Workstation Security Policy to the Workstations Organizational Unit so the configured security settings can be centrally applied to domain-joined workstation systems.
 <img width="1912" height="943" alt="image" src="https://github.com/user-attachments/assets/fc0bb563-0671-43e8-ac2d-0a9987c71e82" />
@@ -120,7 +128,7 @@ Linked the Workstation Security Policy to the Workstations Organizational Unit s
 
 
 
-## Step 9 - Used PowerShell for Active Directory Administration
+## Step 10 - Used PowerShell for Active Directory Administration
 
 Used PowerShell to query and validate Active Directory domain information, review user accounts, and inspect security groups within the lab environment.
 <img width="1916" height="968" alt="image" src="https://github.com/user-attachments/assets/a5c3f2db-ce60-4a67-aec5-9f8ac99a0406" />
@@ -141,7 +149,7 @@ Get-ADUser -Filter * | Select-Object Name, Enabled
 Get-ADGroup -Filter * | Select-Object Name
 
 
-## Step 10 - Validate DNS and Domain Connectivity
+## Step 11 - Validate DNS and Domain Connectivity
 
 Used PowerShell and Windows networking tools to validate DNS resolution and communication between systems in the lab environment.
 
